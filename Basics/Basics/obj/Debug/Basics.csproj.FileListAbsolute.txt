@@ -5,3 +5,10 @@ C:\Users\Windows\Desktop\GITHUB\c# basics\Basics\Basics\obj\Debug\Basics.csprojA
 C:\Users\Windows\Desktop\GITHUB\c# basics\Basics\Basics\obj\Debug\Basics.csproj.CoreCompileInputs.cache
 C:\Users\Windows\Desktop\GITHUB\c# basics\Basics\Basics\obj\Debug\Basics.exe
 C:\Users\Windows\Desktop\GITHUB\c# basics\Basics\Basics\obj\Debug\Basics.pdb
+C:\Users\Windows\Desktop\GITHUB\c-sharp-basics\Basics\Basics\bin\Debug\Basics.exe.config
+C:\Users\Windows\Desktop\GITHUB\c-sharp-basics\Basics\Basics\bin\Debug\Basics.exe
+C:\Users\Windows\Desktop\GITHUB\c-sharp-basics\Basics\Basics\bin\Debug\Basics.pdb
+C:\Users\Windows\Desktop\GITHUB\c-sharp-basics\Basics\Basics\obj\Debug\Basics.csprojAssemblyReference.cache
+C:\Users\Windows\Desktop\GITHUB\c-sharp-basics\Basics\Basics\obj\Debug\Basics.csproj.CoreCompileInputs.cache
+C:\Users\Windows\Desktop\GITHUB\c-sharp-basics\Basics\Basics\obj\Debug\Basics.exe
+C:\Users\Windows\Desktop\GITHUB\c-sharp-basics\Basics\Basics\obj\Debug\Basics.pdb

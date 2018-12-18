@@ -66,6 +66,23 @@ namespace Basics
       
 
         // DO WHILE, executes the code at least once to see the conditions
+        public void doWhile()
+        {
+            int i = 0;
 
+            do
+            {
+                Console.WriteLine("Value of i: {0}", i);
+
+                i++;
+                //can also use break inside of if
+                /*
+                 * 
+                 * if(i==5)break; etc
+                 * 
+                 * */
+
+            } while (i < 10);
+        }
 }
 }
