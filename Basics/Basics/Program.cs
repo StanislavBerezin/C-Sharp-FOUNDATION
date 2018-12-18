@@ -26,12 +26,12 @@ namespace Basics
             //finished 1.0
 
             //intereface 1.1
-
+            //CREATING INTERFACE and EXECUTING INTERFACE
             Interface log = new ConsoleLog();
             log.Log("HEY");
-
-
             //interface finished 1.1
+
+
 
 
             
