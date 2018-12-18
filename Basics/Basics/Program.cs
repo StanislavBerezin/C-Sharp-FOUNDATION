@@ -12,9 +12,30 @@ namespace Basics
         
         static void Main(string[] args)
         {
+            //simple
             Loops miniLoops = new Loops();
-
+            Anonym AnonIdentity = new Anonym();
+            AnonIdentity.anonVariables();
             miniLoops.forConditionLoop();
+            //simple done
+
+            //creating new object 1.0
+            CreateObject identity = new CreateObject();
+            identity.newUser(25, "Stas", true);
+            Console.WriteLine(identity.howOld());
+            //finished 1.0
+
+            //intereface 1.1
+
+            Interface log = new ConsoleLog();
+            log.Log("HEY");
+
+
+            //interface finished 1.1
+
+
+            
+            
 
             stopApp();          
         }
