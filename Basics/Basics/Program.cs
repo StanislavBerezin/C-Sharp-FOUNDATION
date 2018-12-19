@@ -31,7 +31,10 @@ namespace Basics
             log.Log("HEY");
             //interface finished 1.1
 
-
+            //ENUM 1.2
+            Enumm en = new Enumm();
+            en.runFunction();
+            //ENUM 1.2 done
 
 
             

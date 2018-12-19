@@ -42,7 +42,16 @@ namespace Basics
         //with constructor, u must initialise all of the constructor values
         Employee emp = new Employee(7, "Stas", "Berezin");
         
-       
+       /*
+        Structs can have constants, fields, methods, props etc
+        cannot inherit from another struct or class
+        cannot be abstract, virtual or protected
 
+        DIfference between class and struct
+        Value type rather than reference type (class)
+        cannot have a default constructor (everything is just unassigned)
+
+           
+    */
     }
 }

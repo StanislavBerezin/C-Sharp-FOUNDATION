@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Anonym.cs" />
     <Compile Include="CreateObject.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="Interface.cs" />
     <Compile Include="Loops.cs" />
     <Compile Include="Program.cs" />
