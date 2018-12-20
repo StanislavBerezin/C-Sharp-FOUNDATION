@@ -38,6 +38,27 @@ namespace Basics
          * 
          * 
          * Collections: to hold values or objects
+         * 
+         * to check:
+         * 1)Dict
+         * 2)
+         * 
+         * how to handle errors
+         *  try
+            {
+                 if (std  == null)
+                 throw new NullReferenceException("Student object is null.");
+            }
+            catch(Exception ex)
+            {
+                // handle exception
+            }
+            finally
+            {
+                // final cleanup code
+            }
+
+        Can do custom ones too.
          * */
     }
 }
