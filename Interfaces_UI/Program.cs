@@ -11,6 +11,7 @@ namespace Interfaces_UI
     {
         static void Main(string[] args)
         {
+            //allows us to put more than 1 type in this list due to interface type
             List<IProductModel> cart = AddSampleData();
             CustomerModel customer = GetCustomer();
 
@@ -19,7 +20,8 @@ namespace Interfaces_UI
                 //this is how it prints
                 prod.ShipItem(customer);
 
-                //checking if its a digitalProduct
+                //checking if its a digitalProduct type inside of the list, if there is, then we can acess some of its
+                //properties.
                 if (prod is IDigitalProductModel digital)
                 {
                     Console.WriteLine($"For the { digital.Title } you have { digital.TotalDownloadsLeft } downloads left.");
