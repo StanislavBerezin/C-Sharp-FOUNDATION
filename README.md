@@ -14,6 +14,7 @@ which calls interface for PRODUCT which forces to make `title and price` params 
 `public int numberOfDownloads {get; set;}` so now anyone who calls DIGITALPRODUCT interface will be bound to make
 `title, price and numberOfDownloads'.
 - AN interface can also be used when defining List like `List<IProductModel> output = new List<IProductModel>()`
+and inside of this list you can many different models but they have to either inherit from IProductModel or implement it directly
 
 
 3)
