@@ -21,7 +21,7 @@ namespace Interfaces_UI
                 prod.ShipItem(customer);
 
                 //checking if its a digitalProduct type inside of the list, if there is, then we can acess some of its
-                //properties.
+                //properties.  Basically if it also implements digital prod
                 if (prod is IDigitalProductModel digital)
                 {
                     Console.WriteLine($"For the { digital.Title } you have { digital.TotalDownloadsLeft } downloads left.");
@@ -52,6 +52,8 @@ namespace Interfaces_UI
             output.Add(new PhysicalProductModel { Title = "Black Mirror disk" });
             output.Add(new PhysicalProductModel { Title = "Microsoft laptop" });
             output.Add(new PhysicalProductModel { Title = "Gym membership" });
+            //the reason we can add this, because this interface implements IProductModel, hence it is allowed
+
             output.Add(new DigitalProductModel { Title = " `How to make money on forex` " });
             output.Add(new CourseProductModel { Title = ".NET Pro course" });
 

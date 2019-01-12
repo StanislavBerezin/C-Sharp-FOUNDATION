@@ -54,7 +54,7 @@ namespace ConsoleUI
 
         private static void PopulateLists(List<Person> people, List<LogEntry> logs)
         {
-            people.Add(new Person { FirstName = "Tim", LastName = "Corey" });
+            people.Add(new Person { FirstName = "Stas", LastName = "Berezin" });
             people.Add(new Person { FirstName = "Sue", LastName = "Storm", IsAlive = false });
             people.Add(new Person { FirstName = "Greg", LastName = "Olsen" });
 
