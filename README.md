@@ -12,7 +12,9 @@ List<IDataAccess> = new List<IDataAccess>(){
 	new TextFileDataAcess()
 
 
-};``` that implies that both of them have similar functionality to some extend, foreach loops etc could be used
+};
+```
+ that implies that both of them have similar functionality to some extend, foreach loops etc could be used
 Another element is that we can make lists based on abstract classess following the same pattern, just replacing 
 `IDataAccess` to abstract class name and achieve the same result
 
