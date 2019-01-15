@@ -54,6 +54,35 @@ Now anything that inherits from that abstract class will have the so called impl
 If we want to allow some overriding functionality to defined method in abstract class we need to add `public virtual string Name(string Prop)`
 that will allow us to override it in inherited class. `string output = base.Name(Prop)` do some manipulation with this output and eventually return it.
 
-6)
+6) Dynamic and Var
+`var number = 1` from now on, only ints can be assigned
+`dynamic number = 1` is an int but can become `dynamic number 1.1` decimal. Types can be changed
+Can also make objects, methods(can return any type) with them, but dynamic might give more errors during runtime. Usually used when integrating other languages
+like python, ruby etc.
+Var can be used like `var PeopleList = new List<List<Person>>();` and then `foreach (var person in PeopleList)` which essentially makes it quite clear what its doing.
+Or to create anonymous objects like `var item = new {firstName: "Stas"}` it doesnt have a type, hence var is a good option.
 
+7) Connection strings to SQL (Dapper)
+Install Dapper through Nuggets, go to App.Config and there in between configuration brackets add 
+```
+<connectionStrings>
 
+//can add more connections in here, just when making a connection need to specify what DB trying to connect
+//for more information can go to connection string documentation
+
+<add name="DB_name" connectionString ="Server.(here you add ur server);Database=(name of db);Trusted_Connection=True;(or use ur credentials) providerName="System.Data.SqlClient " />
+</connectionStrings>
+
+```
+Then wherever you want to establish connection in your app do the following code, by typing `using` it will create a connection when called
+and close it once its finished doing all the work
+```
+using (IDbConnection connection = new MySqlConnection(GlobalConfig.ConnString(db)))
+            {
+                var p = new DynamicParameters();
+                
+		//use procedures for doing all the work with db
+                connection.Execute("spPrizes_Insert", p, commandType: CommandType.StoredProcedure);
+                
+            }
+```
